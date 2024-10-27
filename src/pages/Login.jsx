@@ -53,7 +53,8 @@ const Login = () => {
 
           <form onSubmit={submitHandler} className="mt-6 flex flex-col gap-4">
             <input
-              type="text"
+              type="email"
+              required
               placeholder="Email Address"
               name="email"
               value={formdata.email}
@@ -62,6 +63,7 @@ const Login = () => {
             />
             <input
               type="password"
+              required
               placeholder="Password"
               name="password"
               value={formdata.password}
@@ -78,12 +80,12 @@ const Login = () => {
             <p className="text-gray-500">Forgot Password?</p>
           </div>
 
-          <div className="text-center mt-2">
+          {/* <div className="text-center mt-2">
             <span className="text-gray-500">Don't have an account?</span>
             <Link to={"signup"} className="text-blue-400 ml-1 hover:underline">
               Register here
             </Link>
-          </div>
+          </div> */}
 
           <div className="text-center text-gray-500 mt-6 text-sm">
             Terms of use. Privacy policy

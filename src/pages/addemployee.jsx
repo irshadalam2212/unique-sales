@@ -3,7 +3,7 @@ import signupImg from "../assets/images/signupImg.webp";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 
-const Signup = () => {
+const AddEmployee = () => {
   const navigate = useNavigate();
   const [formdata, setFormdata] = useState({
     firstname: "",
@@ -46,7 +46,7 @@ const Signup = () => {
           </h1>
 
           <h2 className="text-lg md:text-xl text-center text-gray-600 mt-2">
-            Sign up to explore business
+            Sign up to be the part of Unique Sales
           </h2>
 
           <form onSubmit={submitHandler} className="mt-6 flex flex-col gap-4">
@@ -102,16 +102,16 @@ const Signup = () => {
             />
 
             <button className="uppercase w-full bg-[#332d2d] text-white py-2 rounded-md shadow-lg hover:bg-[#514646] transition-colors duration-300">
-              Sign Up
+              Add
             </button>
           </form>
 
-          <div className="text-center mt-2">
+          {/* <div className="text-center mt-2">
             <span className="text-gray-500">Already registered?</span>
             <Link to={"/"} className="text-blue-400 ml-1 hover:underline">
               Login Here
             </Link>
-          </div>
+          </div> */}
 
           <div className="text-center text-gray-500 mt-6 text-sm">
             Terms of use. Privacy policy
@@ -130,4 +130,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default AddEmployee;
