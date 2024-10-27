@@ -5,6 +5,8 @@ import Dashboard from "./pages/admin/dashboard";
 import AddProduct from "./pages/admin/addproduct";
 import Navbar from "./components/Navbar";
 import AddEmployee from "./pages/addemployee";
+import AddCustomer from "./pages/admin/addcustomer";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -12,10 +14,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
-        {/* <Route path="/signup" element={<Signup />} /> */}
-        <Route path="/home" element={<Dashboard />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/admindashboard" element={<Dashboard />} />
         <Route path="/addproducts" element={<AddProduct />} />
         <Route path="/addemployee" element={<AddEmployee />} />
+        <Route path="/addcustomer" element={<AddCustomer />} />
       </Routes>
     </div>
   );

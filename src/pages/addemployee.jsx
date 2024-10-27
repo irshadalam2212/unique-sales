@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import signupImg from "../assets/images/signupImg.webp";
 import toast from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AddEmployee = () => {
   const navigate = useNavigate();
